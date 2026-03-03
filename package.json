@@ -2,9 +2,12 @@
   "name": "app",
   "version": "1.0.0",
   "description": "자바스크립트 학습",
-  "main": "index.js",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
