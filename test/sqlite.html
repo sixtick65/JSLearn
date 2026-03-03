@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SQLite kvvfs 실습</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 20px auto; }
+        input { padding: 5px; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>SQLite 영구 저장소 실습</h3>
+        <div>
+            <input type="text" id="inputKey" placeholder="키 (예: theme)">
+            <input type="text" id="inputValue" placeholder="값 (예: dark)">
+            <button id="btnSave">저장</button>
+        </div>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="../test/sqlite.js"></script>
+</body>
+</html>
